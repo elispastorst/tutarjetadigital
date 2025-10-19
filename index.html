@@ -25,7 +25,7 @@
             padding: 15px; 
         }
 
-        /* Header mejorado */
+        /* Header mejorado con imagen */
         header {
             text-align: center;
             padding: 40px 20px;
@@ -33,6 +33,23 @@
             border-radius: 20px;
             margin: 20px 0;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-image {
+            width: 100%;
+            max-width: 400px;
+            height: 200px;
+            background: linear-gradient(135deg, #1e3c72, #25D366);
+            border-radius: 15px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
         }
 
         h1 {
@@ -98,6 +115,44 @@
         }
 
         .benefit-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* NUEVA SECCIÓN: CÓDIGO QR */
+        .qr-section {
+            background: rgba(255,255,255,0.95);
+            border-radius: 20px;
+            padding: 40px 20px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .qr-container {
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .qr-placeholder {
+            width: 200px;
+            height: 200px;
+            background: #f5f5f5;
+            border: 2px dashed #25D366;
+            border-radius: 10px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-weight: bold;
+        }
+
+        .qr-instructions {
+            margin-top: 20px;
             color: #666;
             font-size: 0.95rem;
         }
@@ -239,6 +294,11 @@
 <body>
     <div class="container">
         <header>
+            <!-- ESPACIO PARA TU IMAGEN DE PORTADA -->
+            <div class="header-image">
+                [TU IMAGEN DE PORTADA AQUÍ]
+            </div>
+            
             <h1>¿Tu Comunidad Digital Podría Desaparecer Mañana Mismo?</h1>
             <p class="subtitle">YouTube, Instagram y TikTok pueden cerrar tu cuenta en segundos... y perderías todo.</p>
             
@@ -282,6 +342,32 @@
                     <h3>✅ AUTORIZADO POR EMPRENDE WORLD</h3>
                     <p>Usa la misma plataforma que impulsa a cientos de emprendedores. Totalmente compatible y aprobado por los administradores.</p>
                 </div>
+                
+                <!-- NUEVA VENTAJA COMPETITIVA -->
+                <div class="benefit-card" style="border-left-color: #ff6b6b;">
+                    <h3>⚡ VENTAJA COMPETITIVA INMEDIATA</h3>
+                    <p><strong>Ya no es opción, es NECESIDAD:</strong> En un mundo donde el 90% busca todo con su teléfono, quienes no estén digitalizados DESAPARECERÁN. Sé pionero y domina el futuro.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- NUEVA SECCIÓN: CÓDIGO QR -->
+        <section class="qr-section">
+            <h2>📲 COMPARTE ESTA REVOLUCIÓN DIGITAL</h2>
+            <p>Escanea el código QR y comparte esta oportunidad con tus contactos</p>
+            
+            <div class="qr-container">
+                <div class="qr-placeholder">
+                    [TU CÓDIGO QR AQUÍ]
+                </div>
+                <h3>¡Comparte la Revolución Digital!</h3>
+                <p class="qr-instructions">
+                    <strong>Instrucciones:</strong><br>
+                    1. Toma una captura de este código QR<br>
+                    2. Compártelo en tus redes sociales<br>
+                    3. Envía a tus contactos por WhatsApp<br>
+                    4. ¡Sé parte del cambio digital!
+                </p>
             </div>
         </section>
 
